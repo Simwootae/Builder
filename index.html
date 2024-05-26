@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- 브라우저에 따라서 논되게 하기 -->
+   <!-- 네비게이션 -->
+   <nav class="navigation">
+      <div>
+         <i class="fa-solid fa-phone"></i>
+         <span>+01-40-114-6855</span>
+      </div>
+      <div>
+         <i class="fa-solid fa-envelope"></i>
+         <span>demo@gmail.com</span>
+      </div>
+      <div>
+         <i class="fa-solid fa-location-dot"></i>
+         <span>Mordern Tawon Mosco</span>
+      </div>
+   </nav>
+
+
+   <!-- 탑 섹션 사진 -->
+   <section class="topSection">
+
+      <!-- 탑 네비 -->
+      <div class="topNav">
+         <!-- 로고 -->
+         <div id="img"></div>
+         <!-- 리스트 -->
+         <ul>
+            <li id="act">HOME</li>
+            <li class="li">SERVICES</li>
+            <li class="li">ABOUT</li>
+            <li class="li">PROJECT</li>
+            <li class="li">BLOG</li>
+            <li class="li">TESTIMONIAL</li>
+            <li class="li">CONTACT US</li>
+            <li class="li">Login</li>
+            <li id="buttonBox"><i class="fa-solid fa-user"></i><button>GET A QUOTE</button></li>
+         </ul>
+      </div>
+
+      <!-- 슬라이더 -->
+      <div class="TopsliderBox">
+         <!-- 슬라이더 1번 -->
+         <div class="slider slider1">
+            <p id="title">BUILDER<br>CONSTRUCTION<br>SERVICES</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <div class="btnBox">
+               <button id="Contact">Contact US</button>
+               <button id="About">About Us</button>
+            </div>
+         </div>
+         <!-- 슬라이더 2번 -->
+         <div class="slider slider2">
+            <p id="title">BUILDER<br>CONSTRUCTION<br>SERVICES</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <div class="btnBox">
+               <button id="Contact">Contact US</button>
+               <button id="About">About Us</button>
+            </div>
+         </div>
+
+         <!-- 슬라이더 3번 -->
+         <div class="slider slider3">
+            <p id="title">BUILDER<br>CONSTRUCTION<br>SERVICES</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            <div class="btnBox">
+               <button id="Contact">Contact US</button>
+               <button id="About">About Us</button>
+            </div>
+         </div>
+      </div>
+
+      <!-- 슬라이더 컨트롤 -->
+      <div class="Control">
+         <div class="radius" id="btn_next"><i class="fa-solid fa-chevron-right"></i></div>
+         <div class="radius" id="btn_pre"><i class="fa-solid fa-chevron-left"></i></div>
+      </div>
+   </section>
+
+   <!-- 아워 서비스 섹션 -->
+   <section class="ourService container">
+      <!-- 타이틀 -->
+      <div class="title">
+         <p id="big">Our Services</p>
+         <p id="small">ssages of Lorem Ipsum available, but the majority have suffered alteration</p>
+      </div>
+
+      <!-- 카드 div -->
+      <div class="cardDiv">
+         <div class="ServiceCard" id="firstcard">
+            <div><img src="./images/icon-1.png" alt="이미지 없음"></div>
+            <p id="big">CONSTRUCTION SERVICES</p>
+            <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using L</p>
+            <p id="button">Read More</p>
+         </div>
+         <div class="ServiceCard">
+            <div><img src="./images/icon-2.png" alt="이미지 없음"></div>
+            <p id="big">BUILDING MODELING</p>
+            <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using L</p>
+            <p id="button">Read More</p>
+         </div>
+         <div class="ServiceCard">
+            <div><img src="./images/icon-3.png" alt="이미지 없음"></div>
+            <p id="big">PRE CONSTRUCTION</p>
+            <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using L</p>
+            <p id="button">Read More</p>
+         </div>
+         <div class="ServiceCard">
+            <div><img src="./images/icon-4.png" alt="이미지 없음"></div>
+            <p id="big">MANAGEMENT</p>
+            <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using L</p>
+            <p id="button">Read More</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- 어바웃 어스 섹션 -->
+   <section class="aboutUs container">
+      <!-- 좌측 텍스트 -->
+      <div class="textBox">
+         <p id="big">About Us</p>
+         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+         <button>Read More</button>
+      </div>
+      <!-- 우측 이미지박스 -->
+      <div class="imgBox">
+         <img src="./images/about-img.png" alt="">
+         <!-- 아이콘 -->
+         <div><img src="./images/play-icon.png" alt=""></div>
+         <div id="play"></div>
+      </div>
+
+   </section>
+
+
+   <!-- 프로젝트 섹션 -->
+   <section class="Project">
+      <!-- 타이틀 -->
+      <div  id="title"><span>Project</span></div>
+
+      <!-- 리스트(라벨 버튼) -->
+      <ul>
+         <li id="ALL"><label>ALL</label></li>
+         <li id="PAINTINGLk"><label>PAINTINGLk</label></li>
+         <li id="RECONSTRUCTIONL"><label>RECONSTRUCTIONL</label></li>
+         <li id="REPAIRSL"><label>REPAIRSL</label></li>
+      </ul>
+
+      <!-- 슬라이더로 바꾸기 -->
+      <!-- 카드 -->
+      <div class="cardDiv">
+         <!-- 카드1 -->
+         <div class="cardBox" id="PAINTINGLk">
+            <div class="imgBox">
+               <div class="fliter"></div>
+               <div class="radiusBorder">
+                  <i class="fa-solid fa-link"></i>
+               </div>
+
+            </div>
+            <div class="textBox">
+               <p id="big">PAINTINGLk</p>
+               <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+            </div>
+         </div>
+
+         <!-- 카드 2 -->
+         <div class="cardBox"  id="RECONSTRUCTIONL">
+            <div class="imgBox">
+               <div class="fliter"></div>
+               <div class="radiusBorder">
+                  <i class="fa-solid fa-link"></i>
+               </div>
+            </div>
+
+            <div class="textBox">
+               <p  id="big">RECONSTRUCTIONL</p>
+               <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+            </div>
+         </div>
+
+         <!-- 카드3 -->
+         <div class="cardBox"  id="REPAIRSL">
+            <div class="imgBox">
+               <div class="fliter"></div>
+               <div class="radiusBorder">
+                  <i class="fa-solid fa-link"></i>
+               </div>
+            </div>
+            <div class="textBox">
+               <p  id="big">REPAIRSL</p>
+               <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+            </div>
+         </div>
+
+         <!-- 카드1 -->
+         <div class="cardBox" id="PAINTINGLk">
+            <div class="imgBox">
+               <div class="fliter"></div>
+               <div class="radiusBorder">
+                  <i class="fa-solid fa-link"></i>
+               </div>
+
+            </div>
+            <div class="textBox">
+               <p id="big">PAINTINGLk</p>
+               <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+            </div>
+         </div>
+         
+         <!-- 카드 2 -->
+         <div class="cardBox"  id="RECONSTRUCTIONL">
+            <div class="imgBox">
+               <div class="fliter"></div>
+               <div class="radiusBorder">
+                  <i class="fa-solid fa-link"></i>
+               </div>
+            </div>
+
+            <div class="textBox">
+               <p  id="big">RECONSTRUCTIONL</p>
+               <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+            </div>
+         </div>
+
+         <!-- 카드3 -->
+         <div class="cardBox"  id="REPAIRSL">
+            <div class="imgBox">
+               <div class="fliter"></div>
+               <div class="radiusBorder">
+                  <i class="fa-solid fa-link"></i>
+               </div>
+            </div>
+            <div class="textBox">
+               <p  id="big">REPAIRSL</p>
+               <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use</p>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- 테스트 모니터 섹션 -->
+   <section class="Testimonial">
+
+      <!-- 컨트롤 박스 -->
+      <div class="controlBox">
+         <div id="pre"><i class="fa-solid fa-chevron-left"></i></div>
+         <div id="next"><i class="fa-solid fa-chevron-right"></i></div>
+      </div>
+
+      <!-- 슬라이더 박스 -->
+      <div class="sliderBox">
+         <!-- 슬라이더1 -->
+         <div class="slider">
+            <span id="title">Testimonial1</span>
+            <div class="detailBox" id="upbox">
+               <div class="upper">
+                  <span>MOLIK</span>
+                  <div><img src="./images/quick-icon.png" alt="이미지"></div>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+            </div>
+            <div class="detailBox" id="downbox">
+               <div class="upper">
+                  <div><img src="./images/quick-icon.png" alt="이미지"></div>
+                  <span>MOLIK</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+            </div>
+         </div>
+
+         <!-- 슬라이더2 -->
+         <div class="slider">
+            <span id="title">Testimonial2</span>
+            <div class="detailBox" id="upbox">
+               <div class="upper">
+                  <span>MOLIK</span>
+                  <div><img src="./images/quick-icon.png" alt="이미지"></div>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+            </div>
+            <div class="detailBox" id="downbox">
+               <div class="upper">
+                  <div><img src="./images/quick-icon.png" alt="이미지"></div>
+                  <span>MOLIK</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+            </div>
+         </div>
+
+         <!-- 슬라이더3 -->
+         <div class="slider">
+            <span id="title">Testimonial3</span>
+            <div class="detailBox" id="upbox">
+               <div class="upper">
+                  <span>MOLIK</span>
+                  <div><img src="./images/quick-icon.png" alt="이미지"></div>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+            </div>
+            <div class="detailBox" id="downbox">
+               <div class="upper">
+                  <div><img src="./images/quick-icon.png" alt="이미지"></div>
+                  <span>MOLIK</span>
+               </div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- 컨텐트 어스 섹션 -->
+   <section class="contactUs">
+      <div class="left">
+         <p class="title">Contact Us</p>
+         <div class="detailBox">
+            <input type="text" placeholder="이름">
+            <input type="text" placeholder="전화번호">
+            <input type="text" placeholder="eamil">
+            <textarea name="" id="" placeholder="message"></textarea>
+            <input type="submit" value="send" id="button">
+         </div>
+      </div>
+      <div class="right"></div>
+   </section>
+
+   <!-- 지도 섹션 -->
+   <section class="mapSection">
+      <div id="map" style="width:100%; height: 500px;"></div>
+   </section>
+   
+
+   <!-- 하단 링크섹션 -->
+   <section class="bottomLickSection">
+      <!-- 아이콘줄 -->
+      <div class="icondiv">
+         <div>
+            <span><i class="fa-solid fa-mobile-screen"></i></span>
+            <p>Call +01 1234567890</p>
+         </div>
+         <div id="middle">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p>demo@gmail.com</p>
+         </div>
+         <div>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <p>Location</p>
+         </div>
+      </div>
+
+      <!-- 내용 div -->
+      <div class="middlediv">
+         <!-- 퀵 링크 -->
+         <div class="quicklink main">
+            <p>QUICK LINKS</p>
+            <ul>
+               <li>Home</li>
+               <li>About</li>
+               <li>Services</li>
+               <li>Projects</li>
+               <li>Testimonial</li>
+               <li>Blog</li>
+               <li>Contact Us</li>
+            </ul>
+         </div>
+
+         <!-- 가운데 내용 -->
+         <div class="middle main">
+            <p>WORK PORTFOLIO</p>
+            <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</span>
+         </div>
+
+         <!-- 오른쪽 인풋 -->
+         <div class="input main">
+            <p>SIGN UP TO OUR NEWSLETTER</p>
+            <div>
+               <textarea name="" placeholder="Enter Your Email" class="radius"></textarea>
+               <input type="text" value="SUBSCRIBE" id="button" class="radius">
+            </div>
+         </div>
+      </div>
+
+      <!-- 하단 아이콘 -->
+      <div class="iconBox">
+         <div><i class="fa-brands fa-facebook-f"></i></div>
+         <div><i class="fa-brands fa-twitter"></i></div>
+         <div><i class="fa-brands fa-instagram"></i></div>
+         <div><i class="fa-brands fa-youtube"></i></div>
+      </div>
+   </section>
+
+   <!-- 푸터 -->
+   <footer class="footer">
+      <pre>2019 All Rights Reserved. Design by HTML.DESIGN Distribution by ThemeWagon</pre>
+   </footer>
+   <script src="java.js"></script>
+   <script src="https://kit.fontawesome.com/ddb9be41cd.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b1368dbd537d8b2fe1615a656de1f1f7"></script>
+
+
+   <!-- 지도 자바스크립트 -->
+   <script>
+   var container = document.getElementById('map');
+   var options = {
+			center: new kakao.maps.LatLng(35.86246448920256, 129.19471543891177 ),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+
+      // 마커가 표시될 위치입니다 
+      var markerPosition  = new kakao.maps.LatLng(35.86246448920256, 129.19471543891177 ); 
+
+      // 마커를 생성합니다
+      var marker = new kakao.maps.Marker({
+      position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+	</script>
+</body>
+</html>

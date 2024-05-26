@@ -1,0 +1,675 @@
+/* border: 1px solid red; */
+*{    margin: 0;    padding: 0;    list-style: none;    box-sizing: border-box;    text-decoration: none;    }
+
+
+
+/* 네비 설정하기 */
+nav
+{
+    position: fixed;
+    /* 네비의 전체 너비를 100%로 */
+    width: 100%;
+    /* div 정렬하기 */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* 네비 패딩주기 */
+    padding: 1%;
+    
+    background-color: rgb(4, 4, 131);
+    z-index: 10000;
+    transition: all 1s;
+}
+
+nav div {    font-size: 10px;    color: white;        /* 호버 시간 */    transition: all 1s;    }
+
+/* div 호버시 주황으로 바뀜 */
+nav div:hover    {    color: orange;       }
+
+
+/* 섹션 배경을 사진으로하기 */
+.topSection
+{
+    position: absolute;
+    /* 섹션 크기 */
+    width: 100%;
+    height: 700px;
+    /* 배경 이미지 */
+    background-image: url("images/banner-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 탑 섹션 상단 리스트와 로고 */
+.topSection .topNav
+{   
+    /* 크기 주기 */
+    width: 100%;      
+    /* 배치하기 */    
+    display: flex;    
+    align-items: center;     
+    justify-content: space-between;     
+    /* 패딩 주기 */    
+    padding: 2%;
+    position: relative;
+    top: 13%;
+}   
+.topSection .topNav #img
+{
+    width: 20%;
+    height: 20px;
+    background-image: url("./images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 리스트 */
+.topSection .topNav ul
+{
+
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    color: white;
+}
+
+/* 리스트 글자 색깔 주기 및 호버 글자 주기 */
+.topSection .topNav ul #act    {    color: orange;    }
+.topSection .topNav ul .li  {   color: white;   transition: all 1s;}
+.topSection .topNav ul .li:hover    {    color: orange; }
+
+
+
+/* 버튼과 아이콘 사이에 간격주기 */
+.topSection .topNav ul #buttonBox    {    text-wrap: nowrap;    /* padding-right: 3%; */    margin-right: 3%;}
+.topSection .topNav ul #buttonBox i    {    padding-right: 20%;    text-wrap: nowrap;}
+/* 버튼박스 오른쪽으로 패딩혹은 마진 주기 *
+
+/* 버튼 스타일 */
+.topSection .topNav ul #buttonBox button    {    padding: 10% 20%;    border-radius: 20px 20px;    background-color: orange;    border: transparent;    color: white;    transition: all 1s;    }
+/* 버튼 호버시 */
+.topSection .topNav ul #buttonBox button:hover    {    color: black;background-color: white;    }
+
+
+/* 슬라이더 글자 배치 */
+
+.topSection .TopsliderBox
+{    
+    width: 35%;
+    height: 500px;
+    position: relative;
+    left: 20%;
+    top: 10%;
+    overflow: hidden;
+}
+
+/* 슬라이더 첫번째 줄 스타일 및 간격*/
+.topSection .TopsliderBox .slider #title    {    font-size: 50px;    padding-bottom: 3%;    }
+
+/* 버튼 스타일 및 간격 */
+.topSection .TopsliderBox .slider .btnBox    {    display: flex;    justify-content: start;    align-items: center;    padding-top: 5%;    }
+.topSection .TopsliderBox .slider button    {    width: 30%; height: 45px;   padding: 3% 6%;    margin-right: 4%;    border-radius: 40px 40px;    border: transparent;}
+.topSection .TopsliderBox .slider #Contact    {    color: white;    background-color: orange;    }
+.topSection .TopsliderBox .slider #About{    background-color: black;    color: white;    transition: all 1s;    }
+.topSection .TopsliderBox .slider #About:hover{background-color: orange; color: white;}
+
+
+.topSection .TopsliderBox .slider
+{
+    transition: all 1s;
+    margin-top: 20%;
+    /* border: 1px solid red; */
+    position: absolute;
+    color: white;
+   
+}
+
+/* 컨트롤 박스 배치 */
+.topSection .Control
+{
+    position: relative;
+    top: -30%;
+    left: 2%;
+    z-index: 99;
+}
+
+/* 컨트롤 아이콘 */
+.topSection .Control div    {    /* 원 만들기 */    width: 50px;    height: 50px;    border-radius: 50%;    /* 아이콘 정렬하기 */    display: flex;    justify-content: center;    align-items: center; margin-bottom: 0.3%;}
+.topSection .Control #btn_next    {    background-color: orange;    color: white;    }
+.topSection .Control #btn_pre    {    background-color: white;   transition:all 1s; }
+/* 이전 버튼 호버시 */
+.topSection .Control #btn_pre:hover    {    background-color: orange;   color: white; }
+
+/* 자바스크립트 동작 구별용 */
+.slider1
+{
+    border: 5px solid red;
+    z-index: 1;
+}
+
+.slider2
+{
+    border: 5px solid aqua;
+    z-index: 2;
+}
+
+.slider3
+{
+    border: 5px solid purple;
+    z-index: 3;
+}
+
+/* 아워 서비스 */
+.ourService {        width: 100%;  padding-top: 8%; padding-top: 15%;}
+/* 아워 서비스 타이틀 */
+.ourService .title    {    text-align: center;    }
+/* 타이틀 자식 */
+.ourService .title #big    {    font-size: 40px;    font-weight:550;    padding-bottom: 1%;       }
+
+/* 카드 배치 */
+.ourService .cardDiv
+{
+    /* 카드 정렬하기 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* 카드부모 좌우에 여유 주기 */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+/* 4개의 너비합이 100이 안되도록 함으로 카드 사이에 마진을 줌 */
+.ourService .cardDiv .ServiceCard
+{
+    width: 24%;
+    /* 카드 안에 패딩 주기 */
+    padding: 1.5%;
+    transition: all 0.5s;
+    
+}
+/* 호버시 카드 스타일 */
+.ourService .cardDiv .ServiceCard:hover{    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.349);   border-radius: 20px;}
+/* 첫번째 박스는 무조건 스타일 들어감 */
+.ourService .cardDiv #firstcard    {    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.349);    border-radius: 20px;    }
+
+
+/* 카드 안 요소간의 스타일 및 간격주기 */
+.ourService .cardDiv .ServiceCard div   {    padding-bottom: 4%;    }
+.ourService .cardDiv .ServiceCard #big  {   font-size: 23px; font-weight: 550; padding-bottom: 15%;}
+.ourService .cardDiv .ServiceCard #button{    padding-top: 9%;   padding-left: 4%;    color: orange;    font-weight: 600;   transition: all 0.5s; }
+.ourService .cardDiv .ServiceCard #button:hover{    color: black;   }
+
+
+/* 어바웃 어스 섹션 전체 정렬 */
+.aboutUs
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 5%;
+    height: 500px;
+}
+
+/* 어바웃 어스 왼쪽 텍스트 */
+.aboutUs .textBox{    width: 45%;   }
+.aboutUs #big { font-size: 40px; padding-bottom: 6%;}
+.aboutUs button     {     width: 150px;    height: 40px;    margin-top: 5%;    background-color: black;    color: white;    border-radius: 20px;   border: transparent; transition: all 0.5s; }
+.aboutUs button:hover    {  background-color: orange;   }
+/* 오른쪽 이미지, 잘리는 부분은 히든처리 */
+.aboutUs .imgBox{    width: 45%;  height: 90%;   overflow: hidden;  position: relative; }
+
+/* 이미지 위에 올라갈 아이콘 */
+.aboutUs .imgBox div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 3;
+    
+}
+.aboutUs .imgBox div img
+{
+    width: 70%;
+    height: 70%;
+    
+}
+
+/* 애니메이션이 동작할 div */
+.aboutUs .imgBox #play
+{
+    animation: infinite iconmove 5s alternate;
+    background-color: orange;
+    z-index: 0;
+}
+/* 아이콘 애니메이션 만들기 */
+/* 키프레임 사용하는 것으로 추정 */
+@keyframes iconmove
+{
+    /* 시작 */
+    from
+    {
+        opacity:0.7;
+
+    }
+    /* 끝 */
+    to
+    {   
+
+        opacity: 0.1;
+    }
+}
+
+/* 프로젝트 섹션 */
+/* 섹션 양끝 비워놓기 */
+.Project    {    margin: auto 12%; padding-top: 10%;}
+.Project #title { font-size: 45px; padding-bottom: 5%;}
+
+
+
+/* 프로젝트 리스트 */
+.Project ul li      
+{        padding: 10%;        text-align: center;     padding-top: 1%;    padding-bottom: 1%;    transition: all 1s;        }
+.Project ul li:hover{   background-color: orange; color: white;}
+.Project ul    {    display: flex;    align-items: center;    justify-content: flex-start; padding-bottom: 5%;}
+
+/* 카드 */
+.Project .cardDiv
+{    
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* 카드 사이에 패딩 주기 */
+.Project .cardDiv .cardBox 
+{    
+    padding: 3%;
+    margin: 1%;     
+    background-color: orange; 
+    border-radius: 20px;  
+    width: 30%;
+    position: absolute;
+}
+ 
+.Project .cardDiv .cardBox{transition: all 1s;}
+
+/* 카드 텍스트가 호버되면 카드 배경이 검정색 */
+.Project .cardDiv .cardBox:hover{    background-color: black;}
+
+/* 카드 이미지 */
+.Project #PAINTINGLk .imgBox    
+{    
+    width: 125%;    
+    height: 400px;    
+    background-image: url("./images/img-1.png");    
+    background-repeat: no-repeat;    
+    background-size: cover;
+
+    position: relative;
+    z-index: 3;
+    top: -60px;
+    left: -13%;
+}
+
+.Project #RECONSTRUCTIONL .imgBox    
+{    
+    width: 125%;    
+    height: 400px;    
+    background-image: url("./images/img-2.png");    
+    background-repeat: no-repeat;    
+    background-size: cover;
+
+    position: relative;
+    z-index: 3;
+    top: -60px;
+    left: -13%;
+}
+
+.Project #REPAIRSL .imgBox    
+{    
+    width: 125%;    
+    height: 400px;      
+    background-image: url("./images/img-3.png");    
+    background-repeat: no-repeat;    
+    background-size: cover;
+
+    position: relative;
+    z-index: 3;
+    top: -60px;
+    left: -13%;
+}
+
+/* 카드 텍스트 */
+.Project .cardDiv #big    {    font-size: 20px;    padding-bottom: 6%;   padding-top: 6%;   }
+
+/* 이미지 안에 링크 아이콘 넣기 (정렬)*/
+.Project .cardDiv .imgBox .radiusBorder
+{
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+/* 사진이 호버되면 투명한 검정색 */
+.Project .cardDiv .imgBox .fliter
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    transition: all 1s;
+}
+.Project .cardDiv .imgBox .fliter:hover{background-color: rgba(0, 0, 0, 0.331);}
+
+
+/* 테스트 모니터 섹션 */
+/* 섹션 전체 */
+.Testimonial
+{
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7%;
+    background-color: grey;
+    width: 100%;
+    height: 780px;
+    position: relative;
+    
+}
+
+/* 컨트롤러 */
+.Testimonial .controlBox
+{
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Testimonial .controlBox #pre
+{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    margin: 0.3%;
+}
+.Testimonial .controlBox #next
+{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    transition: all 1s;
+    margin: 0.3%;
+}
+.Testimonial .controlBox #next:hover{   background-color: orange;   color: white;} 
+
+/* 슬라이더 앱솔해서 배치하기 */
+.Testimonial .sliderBox
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.Testimonial .sliderBox .slider
+{
+    position: absolute;
+    width: 100%;
+    transition: all 1s;
+}
+
+/* 슬라이더 박스 내용 */
+/* 타이틀-인라인이라 위아래 패딩 안됨 */
+.Testimonial .sliderBox .slider #title    {    font-size: 40px;    color: white;  }
+/* 중간줄 정렬 및 색깔 */
+.Testimonial .sliderBox .slider .upper    {    display: flex;    align-items: center;    justify-content: space-between;    color: white;    font-weight: 550;     padding-top: 1dvb;     }
+.Testimonial .sliderBox .slider p   {    padding: 4% 2%;    background-color: white;    border-radius: 8px; }
+
+
+
+
+
+
+/*  컨텍트 어스 섹션 */
+.contactUs
+{
+    padding-top: 5%;
+    margin: 0% 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 좌측 컨텐츠 */
+.contactUs .left
+{
+    width: 40% ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:column;
+    margin: 1%;
+}
+/* 제목 */
+.contactUs .left p{    width: 100%;  padding: 5%; font-size: 30px;}
+/* 인풋 박스 정렬 */
+.contactUs .left .detailBox{    width: 100%;    display: flex;    flex-direction: column;    align-items:flex-start;    justify-content:center;}
+/* 인풋박스 사이에 간격주기 */
+/* 패딩으로 하면 크기가 늘어나서 간격을 못줌 */
+.contactUs .left .detailBox input   {        margin: 4%;  width: 80%;  }
+.contactUs .left .detailBox textarea    {    margin: 4%;  width: 80%;  height: 80px;}
+/* 서브밋 버튼 스타일 */
+.contactUs .left .detailBox #button{    width: 100px;    height: 30px;    border-radius: 20px;    background-color: orange;    color: wheat;    border: transparent;    transition: all 1s;    }
+.contactUs .left .detailBox #button:hover   {   background-color: black;    color: white;   }
+
+/* 오른쪽 컨텐츠(사진) */
+.contactUs .right
+{
+    width: 40%;
+    margin: 1%;
+    background-image: url(./images/contact-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+
+/* 지도 섹션 */
+.mapSection
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.mapSection #map
+{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+/* 맨 마지막 섹션 */
+.bottomLickSection
+{
+    background-color: gray;
+    width: 100%;
+}
+
+.bottomLickSection .icondiv
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding-top: 5%;
+    padding-top: 5%;
+}
+
+.bottomLickSection .icondiv div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    padding-bottom: 5%;
+}
+
+.bottomLickSection .icondiv span{padding: 10px;}
+.bottomLickSection .icondiv div:hover{    color: orange;}
+.bottomLickSection .icondiv #middle{color: orange;}
+
+/* 내용 div */
+.bottomLickSection .middlediv
+{
+
+    width: 90%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.bottomLickSection .middlediv .main
+{
+    width: 31%;
+    height: 250px;
+    color: white;
+    margin: auto;
+}
+
+.bottomLickSection .middlediv .main p 
+{
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+
+.bottomLickSection .middlediv .main ul
+{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.bottomLickSection .middlediv .main ul li{    width: 50%;   transition: all 1s; }
+.bottomLickSection .middlediv .main ul li:hover{ color: orange}
+
+/* 인풋 박스 */
+.bottomLickSection .middlediv .main div .radius
+{
+    border-radius: 30px;
+    height: 50px;
+    
+}
+.bottomLickSection .middlediv .main div textarea
+{
+    line-height: 45px;
+    padding-left: 5%;
+    padding-right: 50% ;
+}
+.bottomLickSection .middlediv .main div #button
+{
+    padding-left: 5%;
+    padding-right: 0;
+    background-color: orange;
+    color: white;
+    transition: all 1s;
+    border: transparent;
+    margin-top: 3%;
+}
+.bottomLickSection .middlediv .main div #button:hover{color: black; background-color: white;}
+
+/* 하단 아이콘 */
+.bottomLickSection .iconBox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2%;
+}
+
+/* 원만들기 */
+.bottomLickSection .iconBox div
+{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 20px;
+    transition: all 1s;
+
+    background-color: white;
+    color: black;
+}
+.bottomLickSection .iconBox div:hover
+{
+    background-color: orange;
+    color: white;
+}
+
+footer
+{
+    padding: 20px;
+    text-align: center;
+}
